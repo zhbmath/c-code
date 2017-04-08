@@ -14,8 +14,8 @@ static int sub(int a, int b)
 
 int result( int a, int b, char c )
 {
-    if ( c == '+' )  p = add;
-    if ( c == '-' )  p = sub;
+    if ( c == '+' )  { p = add; return p(a,b); };
+    if ( c == '-' )  { p = sub; return p(a,b); };
 
-    return p(a,b) ;
+    return 0;
 }
