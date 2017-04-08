@@ -18,12 +18,12 @@ int main()
 
     printf("c=");
     scanf("%c", &c);
+    fflush(stdin);
     if ( c != 42 && c != 43 && c != 45 && c !=47 ) 
     { 
         printf("ilegal operator"); 
         exit(-1); 
     }
-    fflush(stdin);
 
     printf("result=%d\n", result(a, b, c));
 
