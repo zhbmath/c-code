@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-extern int result(char, int, int);
+extern int result(int, int, char);
 
 int main()
 {
-    printf("result = %d", result('-', 4, 9) );
+    printf("result = %d", result(4, 9, '-'));
     return 0;
 }
