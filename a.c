@@ -5,6 +5,7 @@ extern int result(int, int, char);
 
 int main()
 {
+<<<<<<< HEAD
     int a,b;
     char c;
 
@@ -27,5 +28,8 @@ int main()
 
     printf("result=%d\n", result(a, b, c));
 
+=======
+    printf("result = %d\n", result(4, 9, '-'));
+>>>>>>> 4c0741adffa366a4f975b7551b52356ccd6bd3ab
     return 0;
 }
