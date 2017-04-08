@@ -5,7 +5,6 @@ extern int result(int, int, char);
 
 int main()
 {
-<<<<<<< HEAD
     int a,b;
     char c;
 
