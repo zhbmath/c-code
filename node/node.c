@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 typedef struct node{
-  int id;
+  int data;
   struct node *next;
 }NODE;
 
@@ -11,7 +11,7 @@ int main(void)
     int i=0;
     NODE *head=NULL, *pf, *pb;
 
-    for(i=1; i<=3; i++)
+    for(i=0; i<=5; i++)
     {
         pb=(NODE*) malloc(sizeof(NODE));
 
@@ -22,7 +22,7 @@ int main(void)
         else
         {
             pf->next=pb;
-            pf->id=i;
+            pf->data=i;
             pb->next=NULL;
             pf=pb;
         }
@@ -30,8 +30,8 @@ int main(void)
 
     while(head->next != NULL)
     {
-      head++;
-      printf("%d\n", head->id);
+      printf("%d\n", head->data);
+      head=head->next;
     }
 
     return 0;
